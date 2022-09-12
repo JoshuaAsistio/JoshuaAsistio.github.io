@@ -1,0 +1,121 @@
+:root {
+    --bodyBg: rgb(39, 33, 33);
+    --figureBorder: rgb(225, 100, 40);
+    --figureBg: rgb(54, 51, 51);
+    --figureText: rgb(246, 233, 233);
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+/*For the navigation bar*/
+header {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--bodyBg);
+    color: var(--figureText);
+    width: 100%;
+}
+
+h1 {
+    margin-right: auto;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-family: 'Cooper Blacks';
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    padding: 20px;
+}
+
+nav ul li a{
+    color: var(--figureText);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: var(--figureBorder);
+}
+
+/*Background of the body*/
+body {
+    background-color: var(--bodyBg);
+    padding: 35px;
+}
+
+/*For the abouts section*/
+#about {
+    background-color: var(--figureBg);
+    margin: 25px 25px 0 25px;
+    color: var(--figureText);
+    font-size: 25px;
+    line-height: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 10px;
+    border: 1px solid var(--figureBorder);
+}
+
+#about img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    float: left;
+    margin: 20px;
+}
+
+#about article ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 3rem;
+}
+
+/*For the contacts section*/
+#contacts {
+    background-color: var(--figureBg);
+    margin: 25px 25px 0 25px;
+    color: var(--figureText);
+    font-size: 25px;
+    line-height: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 10px;
+    border: 1px solid var(--figureBorder);
+}
+
+#contacts p {
+    text-align: center;
+}
+
+/*For the address section*/
+#address {
+    background-color: var(--figureBg);
+    margin: 25px 25px 0 25px;
+    color: var(--figureText);
+    font-size: 25px;
+    line-height: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 10px;
+    border: 1px solid var(--figureBorder); 
+}
+
+#address p, #address ul {
+    text-align: center;
+}
+
+#address ul {
+    list-style-type: none;
+}

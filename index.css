@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&display=swap');
+ 
+:root {
+    --bodyBg: rgb(39, 33, 33);
+    --figureBorder: rgb(225, 100, 40);
+    --figureBg: rgb(54, 51, 51);
+    --figureText: rgb(246, 233, 233);
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: var(--bodyBg);
+}
+
+header{
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    color: white;
+    font-family: 'Lobster', cursive, Georgia;
+    background-color: rgba(78, 199, 183, 0.8);
+}
+
+img {
+    float: left;
+    margin-right: 25px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+figure {
+    border: 3px solid var(--figureBorder);
+    background-color: var(--figureBg);
+}
+
+figcaption {
+    color: var(--figureText);
+    font-size: 3rem;
+    font-family: 'Lobster', cursive, Georgia;
+    margin-top: 10px;
+}
+
+.no-margin {
+    margin-top: -3px;
+}
+
+a {
+    text-decoration: none;
+}
+
+figure:hover {
+    background-color: var(--figureBorder);
+}
+
+@media (max-width: 1080px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    figcaption {
+        font-size: 1rem;
+    }
+}
+
+footer {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--figureText);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
